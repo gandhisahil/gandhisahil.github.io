@@ -1,4 +1,4 @@
 gandhisahil.github.io
 =====================
 
-my personal site..
+my personal website..
