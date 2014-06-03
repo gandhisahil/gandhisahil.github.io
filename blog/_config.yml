@@ -1,6 +1,6 @@
 name: Sahil gandhi
 markdown: redcarpet
-pygments: true
+# pygments: true
 baseurl: /blog
 
 # # Site settings
