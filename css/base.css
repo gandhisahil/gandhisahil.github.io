@@ -5,12 +5,14 @@ font-family:'AvenirNextLTW01-Regular';
 font-family:'AvenirNextLTW01-Italic';
 font-family:'Avenir Next LT W01 Bold';
 font-family:'AvenirNextLTW01-BoldIta';
+font-family: Lato;
 */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'AvenirNextLTW01-Regular', Helvetica, sans-serif;
+/*  font-family: 'AvenirNextLTW01-Regular', Helvetica, sans-serif;*/
+    font-family: Lato, Helvetica, sans-serif;;
 }
 
 a {
@@ -57,19 +59,19 @@ header {
 
   .name a {
     font-size: 30px;
-    font-family: 'Avenir Next W01 Thin';
-    font-weight: normal;
+/*    font-family: 'Avenir Next W01 Thin';*/
+/*    font-weight: bold;*/
     text-transform: uppercase;
   }
   .name b {
-    font-family: 'Avenir Next LT W01 Bold';
-    font-weight: normal;
+/*    font-family: 'Avenir Next LT W01 Bold';*/
+    font-weight: strong;
   }
 
   .menu {
     padding: 0;
     margin: 0;
-    font-family: 'Avenir Next LT W01 Bold';
+/*    font-family: 'Avenir Next LT W01 Bold';*/
     text-transform: uppercase;
     float: right;
   }
@@ -122,14 +124,14 @@ header {
 
 h1 {
   margin: 0;
-  font-family: 'Avenir Next LT W01 Bold';
+/*  font-family: 'Avenir Next LT W01 Bold';*/
 /*  font-weight: bold;*/
   font-size: 34px;
   font-weight: 400;
   color: #444;
 }
   h1 em, h1 i {
-    font-family: 'AvenirNextLTW01-BoldIta' !important;
+/*    font-family: 'AvenirNextLTW01-BoldIta' !important;*/
     font-weight: normal;
     font-style: normal;
   }
@@ -138,13 +140,13 @@ h1 {
     margin: 50px -30px 20px -30px;
     padding: 10px 30px 10px 25px;
 /*    border-left: 5px solid #eee;*/
-    font-family: 'Avenir Next LT W01 Bold';
+/*    font-family: 'Avenir Next LT W01 Bold';*/
     font-weight: bold;
     font-size: 24px;
     color: #444;
   }
     h2 em, h2 i {
-      font-family: 'AvenirNextLTW01-BoldIta' !important;
+/*      font-family: 'AvenirNextLTW01-BoldIta' !important;*/
       font-weight: normal;
       font-style: normal;
     }
@@ -152,7 +154,7 @@ h1 {
   h3 {
     margin: 50px -30px 20px -27px;
     padding: 15px 30px;
-    font-family: 'Avenir Next LT W01 Bold';
+/*    font-family: 'Avenir Next LT W01 Bold';*/
     font-weight: bold;
 /*    border-left: 3px solid #eee;*/
     font-size: 20px;
@@ -164,15 +166,15 @@ h1 {
 
 }
   .content i, .content em {
-    font-family: 'AvenirNextLTW01-Italic';
+/*    font-family: 'AvenirNextLTW01-Italic';*/
     font-style: normal;
   }
   .content b, .content strong {
-    font-family: 'Avenir Next LT W01 Bold';
+/*    font-family: 'Avenir Next LT W01 Bold';*/
     font-weight: normal;
   }
   .content em b {
-    font-family: 'AvenirNextLTW01-BoldIta';
+/*    font-family: 'AvenirNextLTW01-BoldIta';*/
     font-weight: normal;
     font-style: normal;
   }
@@ -302,7 +304,7 @@ footer {
 }
   .twitter-follow {
     color: rgba(0,0,0,.8);
-    font-family: 'Avenir Next LT W01 Bold';
+/*    font-family: 'Avenir Next LT W01 Bold';*/
     font-weight: normal;
     font-size: 14px;
     float: left;
