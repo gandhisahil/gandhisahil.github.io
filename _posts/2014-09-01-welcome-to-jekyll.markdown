@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello World :)"
+title: Hello World
 date: {}
 categories: jekyll update
 published: true
@@ -15,4 +15,4 @@ public void say_hi(){
 #=> prints 'Hello, World'
 {% endhighlight %}
 
-This is my personal blog, and I'll post interesting things I come across, mainly about java, algorithms, web development and some new tech that blows my mind. Subscribe to the RSS feed or follow me on Twitter. 
+This is my personal blog, and I'll post interesting things I come across, mainly about java, algorithms, web development and some new tech that blows my mind. Subscribe to the RSS feed or follow me on Twitter.
