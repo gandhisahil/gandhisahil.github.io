@@ -1,3 +1,7 @@
+---
+published: true
+---
+
 <!DOCTYPE HTML>
 <!--
 	Webpage design Credits:
@@ -11,17 +15,17 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
+		<!--[if lte IE 8]><script src="main/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="main/js/skel.min.js"></script>
+		<script src="main/js/init.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
+			<link rel="stylesheet" href="main/css/skel.css" />
+			<link rel="stylesheet" href="main/css/style.css" />
+			<link rel="stylesheet" href="main/css/style-wide.css" />
+			<link rel="stylesheet" href="main/css/style-noscript.css" />
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="main/css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="main/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -32,7 +36,14 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Sahil Gandhi</h1>
+						<h2 style="font-size: 1.35em; font-weight: 300; letter-spacing: -0.035em; line-height: 1em;">
+						<a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a> &nbsp;&bull;&nbsp; 
+						<a href="{{ "/portfolio" | prepend: site.baseurl }}">Portfolio</a> &nbsp;&bull;&nbsp; 
+						<a href="{{ "/about" | prepend: site.baseurl }}">About</a>
+						</h2>
+						
 						<p>full stack developer &nbsp;&bull;&nbsp; designer of sorts &nbsp;&bull;&nbsp; student &nbsp;&bull;&nbsp; former intern at <a href="http://myeffecto.com"> MyEffecto </a> <br /> currently working at <a href="http://hootout.com"> HootOut </a> </p>
+												
 						<nav>
 							<ul>
 								<li><a href="https://twitter.com/leo72445" target="_blank" class="fa fa-twitter"><span>Twitter</span></a></li>
