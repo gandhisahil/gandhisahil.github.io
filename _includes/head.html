@@ -1,14 +1,14 @@
 <head>
     <meta charset="UTF-8">
-    <title>% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}">
-    <meta name="twitter:site" content="{{ site.twitter }}">
+<!--    <meta name="twitter:site" content="{{ site.twitter }}">-->
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/d70ca5cd-778e-48cc-9e59-6b276425c670.css">
-    <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection">
-    <link media="only screen and (max-device-width: 480px)" href="/css/mobile.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/pygments.css" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}" type="text/css" media="screen, projection">
+    <link media="only screen and (max-device-width: 480px)" href="{{ "/css/mobile.css" | prepend: site.baseurl }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "../css/pygments.css" | prepend: site.baseurl }}" type="text/css">
 </head>

@@ -1,41 +1,23 @@
 ---
+layout: default
 permalink: /blog/
-published: true
+title: Blog - Sahil Gandhi
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    
-    {{% include head.html %}}
+<ul class="listing">
+    {% for post in site.posts %}
 
-<body>
-    
-    {{% include header.html %}}
-    
-    <div class="hero" style="background-image: url(hero.jpg);"></div>
-    
-    
-    <section class="container content">
-        <ul class="listing">
-            {% for post in site.posts %}
-           
-            <li><span>{{ post.date | date: "%b %-d, %Y" }}</span><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-            
-            {% endfor %}
-            
+    <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+
+    {% endfor %}
+
 <!--
-            <li><span>Aug 20 2014</span><a href="">First post with jekyll!</a></li>
-            <li><span>Aug 20 2014</span><a href="">First post with jekyll!</a></li>
+    <li><span>Aug 20 2014</span><a href="">First post with jekyll!</a></li>
+    <li><span>Aug 20 2014</span><a href="">First post with jekyll!</a></li>
 -->
-        </ul>
-        
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    </section>
-    
-    {{% include footer.html %}}
-    
-</body>
-</html>       
-       
-       
-        
+</ul>
+<hr>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
