@@ -54,18 +54,21 @@ header {
     -webkit-transition: color 0.25s ease-in;
   }
   header a:hover, header a:hover b {
-    color: #307EA9;
+/*    color: #307EA9;*/
   }
 
   .name a {
     font-size: 30px;
 /*    font-family: 'Avenir Next W01 Thin';*/
 /*    font-weight: bold;*/
+      font-weight: 900;
+    letter-spacing: -0.035em;
     text-transform: uppercase;
   }
+
   .name b {
 /*    font-family: 'Avenir Next LT W01 Bold';*/
-    font-weight: strong;
+    font-weight: bold;
   }
 
   .menu {
@@ -81,7 +84,13 @@ header {
   }
   .menu li a{
     font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.035em;
   }
+
+.menu li a:hover {   
+    text-decoration: underline;
+}
 
   .social {
     margin: 0;
