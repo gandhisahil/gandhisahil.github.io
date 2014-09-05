@@ -29,36 +29,36 @@ The code is as follows:
  {% highlight java %}
 
 	public class CountOfOccurrencesOfAnagrams {
-		private HashMap<String, Integer> anagrams = new HashMap<>();
-		
-		private void permutations(String prefix, String str){
-			int n = str.length();
-			if(n==0){
-				anagrams.put(prefix, 0);
-				return;
-			}
-			
-			for(int i = 0; i<n ; i++){
-				permutations(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1));
-			}
+	private HashMap<String, Integer> anagrams = new HashMap<>();
+	
+	private void permutations(String prefix, String str){
+		int n = str.length();
+		if(n==0){
+			anagrams.put(prefix, 0);
+			return;
 		}
 		
-		public void countAna(String word, String text){
-			permutations("", word);
-			int count = 0;
-			for(int i = 0; i<=text.length()-word.length(); i++){
-				if(anagrams.get(text.substring(i, i+ word.length())) != null){
-					count++;
-					System.out.println(text.substring(i, i+ word.length()));
-				}
+		for(int i = 0; i<n ; i++){
+			permutations(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1));
+		}
+	}
+	
+	public void countAna(String word, String text){
+		permutations("", word);
+		int count = 0;
+		for(int i = 0; i<=text.length()-word.length(); i++){
+			if(anagrams.get(text.substring(i, i+ word.length())) != null){
+				count++;
+				System.out.println(text.substring(i, i+ word.length()));
 			}
-			System.out.println(count);
 		}
-		
-		public static void main(String[] args){
-			CountOfOccurrencesOfAnagrams ob = new CountOfOccurrencesOfAnagrams();
-			ob.countAna("for", "forxxorfxdofr");
-		}
+		System.out.println(count);
+	}
+	
+	public static void main(String[] args){
+		CountOfOccurrencesOfAnagrams ob = new CountOfOccurrencesOfAnagrams();
+		ob.countAna("for", "forxxorfxdofr");
+	}
 	}
 	
  {% endhighlight %}
@@ -82,14 +82,18 @@ This is very straight forward. The pseudocode is as follows:
 Given a BST, one of the nodes violates the BST property( left-child < parent < right child ), return the pointer to that node.
 
 **Solution:**
-For every node in the BST this condition has to be satisfied: `NODE->LEFT->INFO < NODE->INFO`< NODE->RIGHT->INFO`
+For every node in the BST this condition has to be satisfied: 
+`NODE->LEFT->INFO < NODE->INFO < NODE->RIGHT->INFO`
 
 *Pseudo-code:*
 
     VIOLATE(NODE) 
     	IF (NODE != NIL)
     		VIOLATE( NODE->LEFT )
-    		IF((NODE->LEFT != NIL) AND (NODE->RIGHT != NIL) AND  !( NODE->LEFT->INFO < NODE->INFO < NODE->RIGHT->INFO ))
+    		IF((NODE->LEFT != NIL) AND 
+    					(NODE->RIGHT != NIL) AND  
+    					!( NODE->LEFT->INFO < NODE->INFO < NODE->RIGHT->INFO ))
+    					
     			PRINT NODE // this node violates the BST
     		VIOLATE(NODE->RIGHT)
 
@@ -119,39 +123,39 @@ This is done by [Kadane's Algorithm](http://en.wikipedia.org/wiki/Maximum_subarr
 
 	public class MaximumSubArray {
 		
-		public static void get_max_subaray(int[] a){
-			int max_now, max_so_far;
+	public static void get_max_subaray(int[] a){
+		int max_now, max_so_far;
+		
+		// variables to keep a track of the max_subarray indices
+		int max_so_far_start_index = 0, max_so_far_end_index = 0;;
+		int max_now_start_index = 0;
+		
+		// initialize
+		max_so_far = max_now = a[0];	
+		
+		for(int i = 1; i<a.length; i++){
 			
-			// variables to keep a track of the max_subarray indices
-			int max_so_far_start_index = 0, max_so_far_end_index = 0;;
-			int max_now_start_index = 0;
-			
-			// initialize
-			max_so_far = max_now = a[0];	
-			
-			for(int i = 1; i<a.length; i++){
-				
-				if(a[i] > max_now + a[i]){
-					max_now_start_index = i;
-					max_now = a[i];
-				} else if(max_now + a[i] > a[i]){
-					max_now = max_now + a[i];				
-				}
-				
-				if(max_now > max_so_far){
-					max_so_far = max_now;
-					max_so_far_end_index = i;
-					max_so_far_start_index = max_now_start_index;
-				}
+			if(a[i] > max_now + a[i]){
+				max_now_start_index = i;
+				max_now = a[i];
+			} else if(max_now + a[i] > a[i]){
+				max_now = max_now + a[i];				
 			}
 			
-			System.out.println(max_so_far + "\t" + max_so_far_start_index + "\t" + max_so_far_end_index);
+			if(max_now > max_so_far){
+				max_so_far = max_now;
+				max_so_far_end_index = i;
+				max_so_far_start_index = max_now_start_index;
+			}
 		}
+		
+		System.out.println(max_so_far + "\t" + max_so_far_start_index + "\t" + max_so_far_end_index);
+	}
 
-		public static void main(String[] args) {
-			int[] a = {4,-1,2,1,-5,4};
-			MaximumSubArray.get_max_subaray(a);
-		}
+	public static void main(String[] args) {
+		int[] a = {4,-1,2,1,-5,4};
+		MaximumSubArray.get_max_subaray(a);
+	}
 
 	}
 
