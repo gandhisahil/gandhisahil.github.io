@@ -1,8 +1,8 @@
 ---
 layout: post
-title:Microsoft Interview - Set 20
-date:2014-09-05 15:53:00
-category: geeksforgeeks microsoft
+title: Microsoft Interview Set 20
+date: 2014-09-05 15:53:00
+categories: microsoft
 published: true
 ---
 
@@ -98,7 +98,7 @@ For every node in the BST this condition has to be satisfied: `NODE->LEFT->INFO 
 Two no.s having equal no. of digits were given in the form of singly linklist. (For eg.- 102 will be given as 1 -> 0 -> 2 ). Add these no.s and return the answer in the form of a singly linkllist. Do it in O(n) time, given n digit numbers
 
 **Solution:**
-With the constraints given the closest solution I was able to get was `O(2n + (n+1))` ie. `O(3n+1)` which is approx. `O(n) 
+With the constraints given the closest solution I was able to get was `O(2n + (n+1))` ie. `O(3n+1)`
 
 Steps:
 -Traverse the first list and form the first number; `O(n)`
