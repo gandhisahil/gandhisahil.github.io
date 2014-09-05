@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft Interview Set 20
 date: 2014-09-05 15:53:00
-categories: microsoft
+categories: geeksforgeeks microsoft
 published: true
 ---
 
