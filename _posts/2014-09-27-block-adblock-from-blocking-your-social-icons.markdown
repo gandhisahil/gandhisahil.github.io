@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Block AdBlock from blocking your social icons
-date: 2014-09-027 16:00:00
+date: 2014-09-27 16:00:00
 categories: hacks web
 published: true
 ---
