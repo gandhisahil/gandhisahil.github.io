@@ -18,6 +18,8 @@ For the more technical audience, adblock simple adds the `visibility: hidden` to
 ##SumoMe social widget with and without AdBlock
 
 ![SumoMe with AdBlock](http://cl.ly/image/0N230834280a/Image%202014-09-27%20at%204.01.46%20pm.png)
+
+
 ![SumoMe without AdBlock](http://cl.ly/image/2K2R3q2u2O0Z/Image%202014-09-27%20at%204.11.05%20pm.png)
 
 
