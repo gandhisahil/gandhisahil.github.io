@@ -41,7 +41,7 @@ published: true
 						<!--<a href="/about">About</a>-->
 						<!--</h2>-->
 						
-						<p>full stack developer &nbsp;&bull;&nbsp; designer of sorts &nbsp;&bull;&nbsp; student &nbsp; <br/> previously worked at &nbsp;<a href="http://myeffecto.com"> MyEffecto </a>,&nbsp; &nbsp;<a href="http://hootout.com"> HootOut </a>,&nbsp; &nbsp;<a href="http://ibm.com"> IBM </a>&nbsp; and &nbsp;<a href="http://workindia.in"> WorkIndia </a>&nbsp; <br/> currently working at Gromor Finance</p>
+						<p>full stack developer &nbsp;&bull;&nbsp; passionate about machine learning &nbsp;&bull;&nbsp; student &nbsp; <br/> previously worked at &nbsp;<a href="http://myeffecto.com"> MyEffecto </a>,&nbsp; &nbsp;<a href="http://hootout.com"> HootOut </a>,&nbsp; &nbsp;<a href="http://ibm.com"> IBM </a>&nbsp; and &nbsp;<a href="http://workindia.in"> WorkIndia </a>&nbsp; <br/> currently working at Gromor Finance</p>
 												
 						<nav>
 							<ul>
@@ -56,12 +56,15 @@ published: true
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; 2017 Sahil Gandhi <!-- Design: <a href="http://html5up.net">HTML5 UP</a>. --></span>
+						<span class="copyright">&copy; <span id="date-year"></span> Sahil Gandhi <!-- Design: <a href="http://html5up.net">HTML5 UP</a>. --></span>
 					</footer>
 				
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		document.getElementById("date-year").innerHTML = new Date().getFullYear();
+	</script>
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
